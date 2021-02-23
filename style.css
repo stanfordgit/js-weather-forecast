@@ -1,0 +1,206 @@
+body{
+background-image: url('images/weatherbgс.jpg');
+background-size: cover;
+}
+
+.main{    
+    width: 640px;
+    margin: auto;    
+}
+
+.myWeatherSearchCity{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height: 25px;
+    line-height: 25px;
+    padding:  20px 20px 40px 20px;    
+}
+
+.myWeather{
+    font-size: 30px; 
+    text-transform: uppercase;
+    color: dodgerblue;
+}
+
+.searchCity { 
+    position: relative; 
+    width:240px;    
+}
+.searchCity input { 
+    border:none; 
+    background-color:lightgrey; 
+    display:block; 
+    width: 100%; 
+    box-sizing: border-box;
+    height: 25px;
+    padding-left: 10px;
+}
+.searchCity img { 
+    position: absolute; 
+    top: 2px; 
+    right: 5px; 
+    cursor: pointer;
+}
+
+.tabTitles{
+    background-color: dodgerblue;    
+    display: flex;    
+    justify-content: left;
+}
+
+.tabs{
+    background-color: dodgerblue;    
+    padding: 0 20px;
+}
+
+.title{
+    color: white;
+    padding: 10px 20px;    
+}
+
+.title:hover{   
+    background-color: lightsteelblue;  
+    cursor: pointer;
+}
+
+.selectedTitle{
+    border-bottom: 2px solid black ;
+}
+
+.tabContent{
+    background-color: lightgray; 
+    padding: 20px;
+}
+
+.currentWeatherDate{
+    display: flex;    
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 10px;    
+}
+
+#currentWeather, #currentDate, .hourlyText, .nearByPlacesText{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hourlyText, .nearByPlacesText{
+    margin-bottom: 10px;
+}
+
+.currentWeatherDetails{
+    display: flex;    
+    justify-content: space-around;
+    background-color: gainsboro;  
+    padding: 5px 10px 20px 10px;
+}
+
+#currentTemperature{
+    font-size: 40px;
+}
+
+.temperature{
+    font-size: 30px;
+}
+
+.sunriseSunsetDuration{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sunrise, #sunset, #duration{
+    width: 120px;
+    text-align: justify;
+}
+
+.hourlyWeather, .nearByPlacesWeather{
+    background-color: gainsboro;  
+    padding: 10px;
+    margin: 20px 0 0 0;
+}
+
+.hourlyContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourlyContentFirstElem{
+    width: 15%;
+}
+
+.hourlyContentSecondElem{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hourlyElem{
+    width: 100px;
+    text-align: center;
+}
+
+.nearByPlacesContent{
+    display: flex;
+    flex-wrap: wrap;    
+    align-content: space-between;
+}
+
+.nearByPlacesContentElem{
+    width: 260px;
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.nearByPlacesContentElem{
+    display: flex;
+    justify-content: space-around;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.nearByPlacesFirst{
+    width: 70%;
+}
+
+.nearByPlacesSecond{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#fiveDaysFirstBlock{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fiveDaysFirstBlockElem{
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    width: 20%;
+    border: 1px solid gray;
+}
+
+.selectedFirstBlockElem, .fiveDaysFirstBlockElem:hover{    
+    background-color: rgb(238, 232, 232);
+    cursor: pointer;    
+}
+
+.fiveDaysWeekDay{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fiveDaysMonthDay{
+    text-transform: uppercase;
+}
+
+.upperText{
+    text-transform: uppercase;
+    font-weight: bold;
+}
